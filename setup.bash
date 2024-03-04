@@ -12,7 +12,7 @@ copy_file() {
     force="$3"
     
     if [ ! -e "$destination_file" ] || [ "$force" = "true" ]; then
-        cp "$source_file" "$destination_file"
+        cp $source_file $destination_file
         echo "Copied $source_file to $destination_file"
     else
         echo "Warning: $destination_file already exists, skipping $source_file"
@@ -27,7 +27,6 @@ while getopts "f" opt; do
     *) echo "Invalid option: -$OPTARG" >&2; exit 1 ;;
   esac
 done
-
 # Shift to the next argument after parsing options
 shift $((OPTIND - 1))
 if [ -d .git ]; then

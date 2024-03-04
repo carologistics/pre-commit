@@ -14,7 +14,7 @@ pip install pre-commit
 Make sure that the environment varuable
 `CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR` is pointing to the root directory if this repo e.g., if you cloned the repo directly in your home directory:
 ```bash
-export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR="~/pre-commit"
+export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR=~/pre-commit
 ```
 
 Call the setup.bash script from the root directory of your repository:
