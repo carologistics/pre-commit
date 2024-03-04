@@ -1,4 +1,9 @@
 #!/bin/sh
+if [ -z "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}" ]; then
+    echo "CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR is not set. Abort"
+    exit 1
+fi
+
 
 # Function to copy file with check
 copy_file() {

@@ -11,9 +11,15 @@ Alternatively, pre-commit can bre installed via pip:
 pip install pre-commit
 ```
 ## Usage
+Make sure that the environment varuable
+`CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR` is pointing to the root directory if this repo e.g., if you cloned the repo directly in your home directory:
+```bash
+export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR="~/pre-commit"
+```
+
 Call the setup.bash script from the root directory of your repository:
 ```bash
-<path-to-this-repo>/./setup.bash
+${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/./setup.bash
 ```
 It will copy all required hidden files and hooks, unless it would override existing files.
 If you want to force the installation, add `-f`.
