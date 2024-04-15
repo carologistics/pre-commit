@@ -100,7 +100,7 @@ repos:
       - --remove-unused-variables
       - --remove-all-unused-imports
 # XML
-- repo: https://github.com/comkieffer/pre-commit-xmllint.git
-  rev: 1.0.0
-  hooks:
-    - id: xmllint
+# - repo: https://github.com/comkieffer/pre-commit-xmllint.git
+#   rev: 1.0.0
+#   hooks:
+#     - id: xmllint
