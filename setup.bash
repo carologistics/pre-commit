@@ -37,6 +37,7 @@ if [ -d .git ]; then
     copy_file "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/.cmakelint.py" "./.cmakelint.py" "$force_copy"
     copy_file "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/.gitlint" "./.gitlint" "$force_copy"
     copy_file "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/.gitignore" "./.gitignore" "$force_copy"
+    copy_file "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/.config.yaml" "./.config.yaml" "$force_copy"
     copy_file "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/.pre-commit-config.yaml" "./.pre-commit-config.yaml" "$force_copy"
     if [ "$force" = "true" ]; then
       cp ${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/git-hooks/* ./.git/hooks/  # -n flag prevents overwriting existing files
