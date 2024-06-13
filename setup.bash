@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Licensed under GPLv2. See LICENSE.gpl. Copyright Carologistics.
+
 if [ -z "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}" ]; then
     echo "CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR is not set. Abort"
     exit 1
@@ -10,7 +13,7 @@ copy_file() {
     source_file="$1"
     destination_file="$2"
     force="$3"
-    
+
     if [ ! -e "$destination_file" ] || [ "$force" = "true" ]; then
         cp $source_file $destination_file
         echo "Copied $source_file to $destination_file"
@@ -43,4 +46,3 @@ if [ -d .git ]; then
 else
     echo "Current directory is not the root directory of a Git repository. Abort."
 fi
-
