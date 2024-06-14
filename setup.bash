@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Licensed under GPLv2. See LICENSE.gpl. Copyright Carologistics.
+# Licensed under GPLv2. See LICENSE file. Copyright Carologistics.
 
 if [ -z "${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}" ]; then
     echo "CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR is not set. Abort"
@@ -47,3 +47,5 @@ if [ -d .git ]; then
 else
     echo "Current directory is not the root directory of a Git repository. Abort."
 fi
+
+exit 0
