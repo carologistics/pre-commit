@@ -1,5 +1,6 @@
 .cmake-format
 .cmakelint.py
+.config.yaml
 .gitignore
 .gitlint
 .pre-commit-config.yaml
