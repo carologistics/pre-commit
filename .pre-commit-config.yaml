@@ -50,7 +50,7 @@ repos:
         args:
           - --fuzzy-match-generates-todo
           - --license-filepath
-          - LICENSE
+          - .LICENSE
           - --comment-style
           - ;
           - --use-current-year
@@ -60,7 +60,7 @@ repos:
         args:
           - --fuzzy-match-generates-todo
           - --license-filepath
-          - LICENSE
+          - .LICENSE
           - --comment-style
           - //
           - --use-current-year
@@ -70,7 +70,7 @@ repos:
         args:
           - --fuzzy-match-generates-todo
           - --license-filepath
-          - LICENSE
+          - .LICENSE
           - --use-current-year
           - --allow-past-years
   # C++
