@@ -39,7 +39,7 @@ repos:
       - id: gitlint
         stages: [commit-msg]
       - id: gitlint-ci
-        args: ["--commits", "origin/master..HEAD"]
+        args: ["--commits", "origin/HEAD..HEAD"]
   - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.5.5
     hooks:
