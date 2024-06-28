@@ -2,17 +2,17 @@
 This Repository contains some useful pre-commit hooks which can be set up locally when developing.
 
 ## Requirements
-On fedora, there is a system pacakge for pre-commit:
+On fedora, there is a system package for pre-commit:
 ```bash
 dnf install pre-commit
 ```
-Alternatively, pre-commit can bre installed via pip:
+Alternatively, pre-commit can be installed via pip:
 ```bash
 pip install pre-commit
 ```
 ## Usage
-Make sure that the environment varuable
-`CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR` is pointing to the root directory if this repo e.g., if you cloned the repo directly in your home directory:
+Make sure that the environment variable
+`CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR` is pointing to the root directory of this repo, e.g., if you cloned the repo directly in your home directory:
 ```bash
 export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR=~/pre-commit
 ```
