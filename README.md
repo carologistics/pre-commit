@@ -16,8 +16,9 @@ Make sure that the environment variable
 ```bash
 export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR=~/pre-commit
 ```
+We recommend setting the variable within the .bashrc, so that it is automatically set in shells.
 
-Call the setup.bash script from the root directory of your repository:
+Call the setup.bash script from within the root directory of a repo you'll use the hooks for:
 ```bash
 ${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/./setup.bash
 ```
