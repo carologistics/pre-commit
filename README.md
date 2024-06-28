@@ -18,9 +18,17 @@ export CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR=~/pre-commit
 ```
 We recommend setting the variable within the .bashrc, so that it is automatically set in shells.
 
-Call the setup.bash script from within the root directory of a repo you'll use the hooks for:
+Call the setup.bash script from within the root directory of a repo you'll use the hooks for once:
 ```bash
 ${CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR}/./setup.bash
 ```
 It will copy all required hidden files and hooks, unless it would override existing files.
 If you want to force the installation, add `-f`.
+
+## Hooks
+Switch to the hidden folder hooks to inspect available hooks, e.g., with:
+```
+cd ~/pre-commit/.git/hooks
+```
+
+t.b.d.
