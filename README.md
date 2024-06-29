@@ -30,5 +30,10 @@ Switch to the hidden folder hooks to inspect available hooks, e.g., with:
 ```
 cd ~/pre-commit/.git/hooks
 ```
+For example, test a repo against licensing, code style, valid commit messages and more:
+```
+pre-commit run --all-files --hook-stage manual
+```
+which checks all files of a repo on demand.
 
 t.b.d.
