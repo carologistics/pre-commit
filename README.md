@@ -10,6 +10,11 @@ Alternatively, pre-commit can be installed via pip:
 ```bash
 pip install pre-commit
 ```
+
+Also, make sure luarocks is installed.
+```bash
+sudo dnf install luarocks
+```
 ## Usage
 Make sure that the environment variable
 `CAROLOGISTICS_PRE_COMMIT_SETTINGS_DIR` is pointing to the root directory of this repo, e.g., if you cloned the repo directly in your home directory:
